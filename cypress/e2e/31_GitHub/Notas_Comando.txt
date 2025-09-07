@@ -6,7 +6,7 @@ creas un nuevo repositorio
 Una vez le das a crear te da la pag los comandos a lanzar para subirlo,
 importante siempre crear la rama master
 
-git remote add origin https://github.com/eduardoseijas/SeleniumWebdriver_1.git
+git remote add origin https://github.com/eduardoseijas/Cypress_Curso_1.git
 (este comando de arriba lo saco de la pag)
 git branch -M master
 git push -u origin master
