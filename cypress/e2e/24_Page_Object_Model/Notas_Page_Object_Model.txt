@@ -1,0 +1,2 @@
+En la carpeta support, creo una carpeta dentro, en este caso la llame PageObjectModel
+y dentro de esa carpeta creo otra con el nombre ProyectoUno_PageObjectModel

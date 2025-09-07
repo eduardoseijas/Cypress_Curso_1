@@ -1,0 +1,31 @@
+Comandos Para correr desde la consola o terminal
+
+*Primera forma para lanzar desde la consola:
+
+node_modules\.bin\cypress run
+
+*tambien se puede con:
+npx cypress run
+
+Con estos, corres todo desde la raiz, todos los ejercicios
+
+-----------------------------------------------------------------------------------------------
+Para correr todos desde el navegador
+npx cypress run --headed 
+
+-----------------------------------------------------------------------------------------------
+Para correr todos los archivos con el navegador chrome
+npx cypress run --browser chrome
+npx cypress run --browser firefox
+
+-----------------------------------------------------------------------------------------------
+
+Para correr un archivo en especifico
+
+npx cypress run --spec "cypress\e2e\08_Retos_Asserts_Invoke\02_Reto_Asserts_Funcion_Invoke.cy.js"
+
+-------------------------------------------------------------------------------------------------
+
+Para correr todos los de una sola seccion o de una sola carpeta completo lo que este ahi
+
+npx cypress run --spec "cypress\e2e\07_Conociendo_Los_Asserts\*
