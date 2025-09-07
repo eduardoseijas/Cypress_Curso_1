@@ -1,0 +1,3 @@
+Este archivo lo cree desde la web de mi git hub,
+ahora una manera de subirlo es haciendo un git pull desde mi proyecto en visual
+
