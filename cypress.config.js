@@ -4,6 +4,7 @@ const { addCucumberPreprocessorPlugin } = require('@badeball/cypress-cucumber-pr
 const createEsbuildPlugin = require('@badeball/cypress-cucumber-preprocessor/esbuild');
 
 module.exports = defineConfig({
+  projectId: '5z77ch',
   e2e: {
     supportFile: 'cypress/support/e2e.js',
     //specPattern: 'cypress/e2e/**/*.feature',
