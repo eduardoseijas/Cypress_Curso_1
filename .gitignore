@@ -1,1 +1,4 @@
 30_GitIgnore/
+node_modules/
+*.mp4
+*
