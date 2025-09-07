@@ -1,8 +1,0 @@
-Dentro de la carpeta fixtures, se crea un archivo json
-
-en este caso lo llame datos_capeta_26_para_archivo_1
-dentro de este coloco los datos que quiero cargar
-
-y por otro lado, cree mi carpeta 26 y dentro de este mi archivo que se llama 01_fixture.cy.js
-
-en este esta la pag que voy a cargar y donde cargare mi archivo json para poderlo correr

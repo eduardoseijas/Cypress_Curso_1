@@ -1,5 +1,0 @@
-Para que el before me funcione con varios test y no repita codigo como el beforeEach
-
-En Cypress.config.js agrego este comando
-
-testIsolation: false, //se ejecute solo una vez y se mantenga el estado en todos los tests el before

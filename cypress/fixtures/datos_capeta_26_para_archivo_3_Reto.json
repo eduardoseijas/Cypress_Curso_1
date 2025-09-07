@@ -1,8 +1,0 @@
-[
-  {"Nombre": "Eduardo Alejandro","Apellido":"Seijas Pacheco","Telefono":"1234567890","Email": "Eduardo@cypress.io","Direccion": "CargandoUnaFixtureFormatoJson1"},
-  {"Nombre": "Pedro","Apellido":"Perez Gutierrez","Telefono":"1234567890","Email": "Pedro@cypress.io","Direccion": "CargandoUnaFixtureFormatoJson2"},
-  {"Nombre": "Juan Fernando","Apellido":"Arango","Telefono":"1234567890","Email": "Juan@cypress.io","Direccion": "CargandoUnaFixtureFormatoJson3"},
-  {"Nombre": "Lucia","Apellido":"Pinas Martin","Telefono":"1234567890","Email": "Lucia@cypress.io","Direccion": "CargandoUnaFixtureFormatoJson4"},
-  {"Nombre": "Chris","Apellido":"Brown","Telefono":"1234567890","Email": "Chris@cypress.io","Direccion": "CargandoUnaFixtureFormatoJson5"}
-
-]

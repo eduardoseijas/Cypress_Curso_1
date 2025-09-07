@@ -1,3 +1,0 @@
-Dentro de esta carpeta support creas una carpeta que sea para page object model
-y dentro de esta carpeta puedes crear tanto proyecto page object model quieras, para usarlos
-en los distinto proyectos que tengas o quieras.

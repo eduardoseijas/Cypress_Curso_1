@@ -1,3 +1,0 @@
-Por ejemplo si quiero un comando para correr  desde la consola, un archivo en especifico, debo estar desde la raiz
-seria por ejemplo: 
-npx cypress run --spec "cypress\e2e\08_Retos_Asserts_Invoke\02_Reto_Asserts_Funcion_Invoke.cy.js"
