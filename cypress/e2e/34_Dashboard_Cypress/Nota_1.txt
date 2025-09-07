@@ -1,0 +1,8 @@
+Cuando abro el navegador con npx cypres open
+
+arriba me logueo con mi usuario de google
+
+en run, consigo este codigo y lo lanzo desde la tetminal
+
+npx cypress run --record --key 68a58e64-711c-452e-bfcc-05c2d7e4ba14
+y veo como corre en el dashboard
