@@ -28,7 +28,7 @@ En run_settings tambien agregamos el build_name y el specs
   "run_settings": {
       "specs": "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/*",
       "build_name": "Lambdatatest_1",
-      "parallels": 1, // si el paralles, le agrego 2 o 3 es el numero de veces que lo corre
+      "parallels": 1, // si el paralles, le agrego 2 o 3 es el numero de veces que lo corra
       "npm_dependencies": {
       "cypress": "15.0.0",
       "@badeball/cypress-cucumber-preprocessor": "23.0.0",
@@ -52,3 +52,7 @@ En run_settings tambien agregamos el build_name y el specs
 
   Y para poder correrlo, ya todo seria
 npx lambdatest-cypress run -c ./lambdatest-config.json --sync --cy "--config-file cypress.config.js"
+
+otra forma de correrlo si quiero que el parallels sea 3 o 2 o 100 es con
+este siguiente comando:
+npx lambdatest-cypress run --parallels 2 -c ./lambdatest-config.json --sync --cy "--config-file cypress.config.js"

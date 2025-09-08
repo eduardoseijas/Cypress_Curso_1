@@ -4,7 +4,7 @@ testSuiteTimeout: 90
 testSuiteStep: 90
 runson: ${matrix.os}
 cypress: true
-concurrency: 1
+concurrency: 2
 jobLabel:
   - heJob
 pre:
