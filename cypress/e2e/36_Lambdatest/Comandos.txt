@@ -26,7 +26,7 @@ y esto los copio y pego en mi lambdatest-config.json
 En run_settings tambien agregamos el build_name y el specs
 
   "run_settings": {
-      "specs": "cypress/e2e/**/*.cy.js",
+      "specs": "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/*",
       "build_name": "Lambdatatest_1",
       "parallels": 1,
       "npm_dependencies": {
@@ -43,6 +43,8 @@ En run_settings tambien agregamos el build_name y el specs
       }
 
   }
+  Si quiero que corran todos, en specs, coloco "specs": "cypress/e2e/**/*.cy.js",
+  Pero en este caso lo hice para que solo corra una carpeta
       "specs": cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/*",
       OJO, este de arriba es el que meti en mi run_settings para que corra una sola carpeta
 
