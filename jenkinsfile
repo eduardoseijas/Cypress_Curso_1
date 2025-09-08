@@ -1,37 +1,53 @@
 pipeline {
-    agent any
+  // No reserves el master para todo; cada stage pedirá su agente
+  agent none
 
-    tools {nodejs "node"}
+  // Cambia 'node' si tu tool en Manage Jenkins → Tools tiene otro nombre
+  tools { nodejs 'node' }
 
-    stages {
+  // Si quieres, guarda la key en Credentials y usa credentials('cypress_key').
+  environment {
+    CYPRESS_RECORD_KEY = '68a58e64-711c-452e-bfcc-05c2d7e4ba14'
+  }
 
-        stage('Cypress Parallel Test Suite') {
-            parallel {
-                stage('Slave 1') {
-                    agent {
-                        label "Agent1_1"
-                    }
-                    steps {
-                        git url: 'https://github.com/eduardoseijas/Cypress_Curso_1.git'
-                        bat 'npm install'
-                        bat 'npm update'                       
-                        bat 'npx cypress run --record --key 68a58e64-711c-452e-bfcc-05c2d7e4ba14  --parallel'
-                    
-                    }
-                }
-                        stage('Slave 2') {
-                    agent {
-                        label "Agent1_2"
-                    }
-                    steps {
-                        git url: 'https://github.com/eduardoseijas/Cypress_Curso_1.git'
-                        bat 'npm install'
-                        bat 'npm update'                       
-                        bat 'npx cypress run --record --key 68a58e64-711c-452e-bfcc-05c2d7e4ba14  --parallel'
-                    
-                    }
-                }
-            }
+  stages {
+    stage('Cypress Parallel Test Suite') {
+      parallel {
+        stage('Slave 1') {
+          agent { label 'Agent_1' }     // <-- tu único agente con 2 executors
+          steps {
+            git url: 'https://github.com/eduardoseijas/Cypress_Curso_1.git'
+            bat 'npm ci'
+            bat '''
+              npx cypress run ^
+                --browser chrome --headless ^
+                --record --key %CYPRESS_RECORD_KEY% ^
+                --parallel --group shard-A ^
+                --ci-build-id %BUILD_TAG%
+                --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
+            '''
+            //Si no quiero que me corra uno solo sino todo, debo quitar --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
+            // Si quieres correr un solo spec, añade:
+            // --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
+          }
         }
+
+        stage('Slave 2') {
+          agent { label 'Agent_1' }     // <-- mismo label
+          steps {
+            git url: 'https://github.com/eduardoseijas/Cypress_Curso_1.git'
+            bat 'npm ci'
+            bat '''
+              npx cypress run ^
+                --browser chrome --headless ^
+                --record --key %CYPRESS_RECORD_KEY% ^
+                --parallel --group shard-B ^
+                --ci-build-id %BUILD_TAG%
+                --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
+            '''
+          }
+        }
+      }
     }
+  }
 }
