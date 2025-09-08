@@ -21,10 +21,11 @@ pipeline {
             bat '''
               npx cypress run ^
                 --browser chrome --headless ^
+                --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
                 --record --key %CYPRESS_RECORD_KEY% ^
                 --parallel --group shard-A ^
                 --ci-build-id %BUILD_TAG%
-                --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
+                
             '''
             //Si no quiero que me corra uno solo sino todo, debo quitar --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
             // Si quieres correr un solo spec, añade:
@@ -40,10 +41,10 @@ pipeline {
             bat '''
               npx cypress run ^
                 --browser chrome --headless ^
+                 --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
                 --record --key %CYPRESS_RECORD_KEY% ^
                 --parallel --group shard-B ^
                 --ci-build-id %BUILD_TAG%
-                --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
             '''
           }
         }
