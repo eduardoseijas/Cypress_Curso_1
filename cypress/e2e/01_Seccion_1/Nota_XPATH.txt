@@ -1,0 +1,18 @@
+Se puede instalar una libreria para XPATH
+npm i -D cypress cypress-xpath @types/cypress
+
+ESTA ES LA LIBRERIA -> require('cypress-xpath'); 
+PERO CUANDO NO PUEDES USARLA PORQUE NO TE LEE LAS OTRAS LIBRERIAS HAY QUE HACER LO SIGUIENTE:
+
+Paso uno:
+En la carpeta support -> en el archivo e2e.js
+Colocas las LIBRERIAS
+///<reference types="cypress" />
+require('cypress-xpath');
+
+Paso dos:
+En la misma carpeta support -> Crea un archivo (file), llamado /e2e.d.ts
+y dentro de este colocarle
+/// <reference types="cypress" />
+/// <reference types="cypress-xpath" />
+guardas, reinicias y ahi te funcionaran ambas LIBRERIAS

@@ -1,0 +1,15 @@
+El pluggin para instalar
+
+npm install cypress-real-events --save-dev
+
+O si da error, usar este
+
+npm install cypress-real-events --save-dev --legacy-peer-deps
+
+libreria a colocar en e2e.js
+
+import "cypress-real-events";
+
+la cabecera a colocar en e2e.d.ts
+
+/// <reference types="@4tw/cypress-real-events" />

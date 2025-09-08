@@ -1,0 +1,15 @@
+El pluggin para instalar
+
+npm install --save-dev @4tw/cypress-drag-drop
+
+O si da error, usar este
+
+npm install --save-dev @4tw/cypress-drag-drop --legacy-peer-deps
+
+libreria a colocar en e2e.js
+
+import '@4tw/cypress-drag-drop';
+
+la cabecera a colocar en e2e.d.ts
+
+/// <reference types="@4tw/cypress-drag-drop" />

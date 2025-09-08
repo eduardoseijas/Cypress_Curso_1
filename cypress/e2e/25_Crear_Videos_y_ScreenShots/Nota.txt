@@ -1,0 +1,21 @@
+Los videos siempre se generan cuando se corre con cypress run
+
+El comando para correr y grabar:
+Por ejemplo aqui correria la carpeta 24 el archivo 02
+
+npx cypress run --spec "cypress\e2e\24_Page_Object_Model\02_PageObjectModel.cy.js" 
+
+Y en configuraciones -> cypress.config.js
+se debe agregar esto
+
+    video:true,
+    screenshotsFolder: 'cypress/screenshots',
+    videosFolder: 'cypress/videos',
+
+
+    y para hacer un screenshots en nuestros comandos, colocas
+    cy.screenshots("Prueba_1") y dentro el nombre que quieras ponerle
+
+    En PageObjectModel en ProyectoDos, dentro de seccion uno, agrege esto, se corre igual 
+
+    npx cypress run --spec "cypress\e2e\24_Page_Object_Model\02_PageObjectModel.cy.js" 

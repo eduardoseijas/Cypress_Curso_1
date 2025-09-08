@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let frutas= ["Pera","Manzana","Mango","Guayaba","Melon"]
+
+    console.log("El numero de elementos es: " + frutas.length)
+    console.log("Esta fruta es: " + frutas[1])
+   
+
+
+    //AGREGAR UNA NUEVA .unshift
+    let AgregarAlPrincipio=frutas.unshift("Uva")
+    console.log("Se agrego uva")
+
+    //Eliminar el primero .shift
+    let EliminarElPrimero=frutas.shift()
+
+    console.log("Se elimino uva")
+
+    //ENCONTRAR ELEMENTO EN UNA POSICION .indexOf
+    let buscarelemento=frutas.indexOf('Pera')
+    console.log("Elemento encontrado: "+buscarelemento)
+    let buscarelemento2=frutas.indexOf('Mango')
+    console.log("Elemento encontrado: "+buscarelemento2)
+
+    //ELIMINAR ELEMENTO POR POSICION .splice
+    let eliminarelementoporposicion=frutas.splice(buscarelemento,1)
+    console.log("Estas son frutas 1: "+frutas)
+
+    //COPIAR TODO EL ARRAY A OTRO .slice
+    let frutas2=frutas.slice()
+    console.log("Estas son frutas 2: "+frutas2)
+
+</script>

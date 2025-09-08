@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let frutas=["Naranja","Pera","Melon","Sandia","Manzana"]
+    console.log(frutas.length)
+
+    /*
+    for(x=0;x<frutas.length;x++)
+    {
+        console.log("Fruta numero: "+ x + " = " + frutas[x])
+    }
+    */
+
+    frutas.forEach(function(elemento,index,array)
+    {
+        console.log(elemento,index,array)
+    })
+
+
+</script>

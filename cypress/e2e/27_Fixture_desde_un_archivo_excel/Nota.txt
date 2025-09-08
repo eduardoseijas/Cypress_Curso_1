@@ -1,0 +1,9 @@
+Mi archivo que esta en fixtures que se llama datos_carpeta_27_reto_Exxcel
+
+convierto toda esa informacion en json, con esta pag web
+
+https://beautifytools.com/excel-to-json-converter.php
+
+creo en fixture la el archivo datos_carpeta_27_excel_convertido_a_json.json
+
+y ya en mi carpeta 27 ejercicio 04, lanzo mi operacion
