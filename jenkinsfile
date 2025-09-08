@@ -27,8 +27,9 @@ pipeline {
                 --ci-build-id %BUILD_TAG%
                 
             '''
-            //Si no quiero que me corra uno solo sino todo, debo quitar --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
             // Si quieres correr un solo spec, añade:
+            //IMPORTANTE ESTO SE AÑADE DEBAJO DE --browser chrome --headless ^, para que pueda correr uno y no todos
+            //Eso para cada uno de los slave que crees
             // --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
           }
         }
