@@ -29,3 +29,22 @@ cd /d "%WORKSPACE%"
 if exist package-lock.json (call npm ci) else (call npm install)
 call npx cypress verify
 call npx cypress run --browser chrome --headless --spec "cypress/e2e/24_Page_Object_Model/03_PageObjectModel_Validando_Error.cy.js"
+
+---------------------------------------------------------------------
+
+DASHBOARAD CYPRESS:
+
+una vez teniendo la configuracion, con todo lo que ya hemos hecho, tanto desde jenkins
+como nuestro package.json y nuestro archivo .npmrc
+
+teniendo nuestro key que esta en nuestra carpeta 34 
+npx cypress run --record --key 68a58e64-711c-452e-bfcc-05c2d7e4ba14
+Con eso ya podemos lanzar tambien para ver correr esto
+
+tanto en nuestro DASHBOARAD y JENKINS a la vez
+
+el comando para lanzarlo es:
+
+cd /d "%WORKSPACE%"  &&  npx cypress run --e2e --record --key 68a58e64-711c-452e-bfcc-05c2d7e4ba14 ^
+  --browser chrome --headless ^
+  --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
