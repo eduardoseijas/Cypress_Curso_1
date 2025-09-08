@@ -30,4 +30,4 @@ la carpeta 32, en node modulo virtual
 pero en este caso es java -jar agent.jar -url http://localhost:8080/ -secret 167cb07aad4793c77cd90e87c01ee32320d4642ab07bd7e3b815f0bbffb57a75 -name "Agent_1" -webSocket -workDir "C:\agent"
 
 y una vez corriendo el agente virtual que este encendido, podemos correr ya
-el royecto pipeline
+el proyecto pipeline
