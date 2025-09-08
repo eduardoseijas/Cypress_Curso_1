@@ -4,26 +4,17 @@
     "access_key": "LT_t1tkJIr8b7ADgQgbomM1uhUlMR3UJ69SdaIN78k734GXk1D"
   },
   "browsers": [
-    { "browser": "chrome", "platform": "Windows 11", "versions": ["latest"] }
+    { "browser": "Chrome", "platform": "Windows 11", "versions": ["latest"] }
   ],
   "run_settings": {
-    "cypress_config_file": "cypress.config.js",
     "build_name": "LT-Cypress",
     "parallels": 1,
-    "specs": "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js",
-    "ignore_files": "",
-    "network": false,
+    "specs": [
+      "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
+    ],
     "video": true,
     "headless": true,
-    "npm_dependencies": {
-      "cypress": "15.0.0",
-      "cypress-xpath": "2.0.1",
-      "cypress-file-upload": "5.0.8",
-      "cypress-real-events": "1.14.0",
-      "@4tw/cypress-drag-drop": "2.3.0",
-      "@badeball/cypress-cucumber-preprocessor": "23.0.0",
-      "@bahmutov/cypress-esbuild-preprocessor": "2.2.5",
-      "esbuild": "0.25.9"
-    }
+    "use_local_dependencies": true,
+    "npm_dependencies": {}
   }
 }
