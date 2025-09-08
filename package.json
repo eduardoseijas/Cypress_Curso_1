@@ -6,7 +6,9 @@
   "scripts": {
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ci": "cypress run --browser chrome --headless",
+    "ci:spec": "cypress run --browser chrome --headless --spec"
   },
   "author": "Eduardo Seijas",
   "license": "ISC",
