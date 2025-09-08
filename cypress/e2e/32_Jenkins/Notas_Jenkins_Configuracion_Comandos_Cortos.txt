@@ -1,0 +1,31 @@
+Creo en la raiz de mi proyecto un archivo llamado
+
+.npmrc dentro de este coloco
+
+legacy-peer-deps=true
+audit=false
+fund=false
+
+luego en mi package.json dentro de scripts debe ir
+
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ci": "cypress run --browser chrome --headless",
+    "ci:spec": "cypress run --browser chrome --headless --spec"
+  }
+
+El comando para lanzalo ya una vez configurado todo es:
+  ----------------------------
+
+  cd /d "%WORKSPACE%"
+if exist package-lock.json (call npm ci) else (call npm install)
+call npx cypress verify
+call npx cypress run --browser chrome --headless --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
+
+O si quiero lanzar otro que no sea el 26 por ejemplo el 24
+cd /d "%WORKSPACE%"
+if exist package-lock.json (call npm ci) else (call npm install)
+call npx cypress verify
+call npx cypress run --browser chrome --headless --spec "cypress/e2e/24_Page_Object_Model/03_PageObjectModel_Validando_Error.cy.js"

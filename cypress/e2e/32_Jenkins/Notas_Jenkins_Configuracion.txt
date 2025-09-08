@@ -12,7 +12,7 @@ si nuestra branch es master, colocarlo ahi
 
 */master
 
-y este es el comando para lanzar alguno en especifico:
+y este es el comando para lanzar alguno en especifico, largo, comando largo:
 --------------------------------------------------------------
 @echo off
 cd /d "%WORKSPACE%" || (echo [ERROR] No workspace & exit /b 1)
@@ -51,4 +51,3 @@ call npx cypress run ^
 
   ------------------------------------------------------------------------------
 
-  
