@@ -1,0 +1,33 @@
+Lo primero es que se debe crear un archivo desde la raiz que se llame:
+
+jenkinsfile 
+dentro de este ya esta como debe tener el cuerpo por dentro,
+importante es, usar el git hub de nuestro proyecto y la llave que tenemos del dashboard
+
+una vez ya creado este archivo, creamos nuestro proyecto pipline 
+
+colocamos el nombre del proyecto que queramos, y selecccionamos la opcion pipeline
+
+le damos a crear 
+luego dentro en configuraciones tendremos
+* General
+*Triggers
+*Pipeline
+*Advanced
+
+En pipeline, seleccionamos la opcion pipeline scripts from SCM
+
+en SCM, colocamos git
+en repositorys url el de nuestro proyecto git hub 
+https://github.com/eduardoseijas/Cypress_Curso_1.git
+
+Branch Specifier (blank for 'any'): */master (si asi lo tenemos configurado y no main)
+
+Script Path: jenkinsfile (OJO es muy importante que este escrito como este en el proyecto, mantener si tiene mayusculas o minusculas, etc)
+
+Luego para correr, encendemos nuestra maquina virtual, como ya esta en los paso de,
+la carpeta 32, en node modulo virtual
+pero en este caso es java -jar agent.jar -url http://localhost:8080/ -secret 167cb07aad4793c77cd90e87c01ee32320d4642ab07bd7e3b815f0bbffb57a75 -name "Agent_1" -webSocket -workDir "C:\agent"
+
+y una vez corriendo el agente virtual que este encendido, podemos correr ya
+el royecto pipeline
