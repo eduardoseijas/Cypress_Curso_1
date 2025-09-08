@@ -1,0 +1,41 @@
+Comando para installar lambdatest
+
+npm i -g lambdatest-cypress-cli
+
+Para iniciar el proyecto 
+npx lambdatest-cypress init
+
+el mismo sistema al lanzar ese comando, crea el base_reporter_config.json
+y tambien el lambdatest-config.json
+
+Una vez instalado voy a la pag web e ingreso con mi usuario 
+https://app.lambdatest.com/console/realtime/browser/desktop
+
+Luego en acounting senting y password y security
+
+busco mi usuario y passoord
+
+y esto los copio y pego en mi lambdatest-config.json 
+
+   "lambdatest_auth": {
+      "username": "eduardoseijas18",
+      "access_key": "LT_t1tkJIr8b7ADgQgbomM1uhUlMR3UJ69SdaIN78k734GXk1D"
+   },
+
+
+En run_settings tambien agregamos el build_name y el specs
+
+  "run_settings": {
+      "cypress_config_file": "cypress.json",
+      "reporter_config_file": "base_reporter_config.json",
+      "build_name": "Integracion_Lambdatest_2",
+      "parallels": 1,
+      "specs": "D:/Practica_Cypress_1/cypress/e2e/*",
+      "ignore_files": "",
+      "network": false,
+      "video": true,
+      "headless": false,
+      "npm_dependencies": {
+         "cypress": "9.6"
+      }
+  }
