@@ -21,11 +21,11 @@
    ],
 
   "run_settings": {
-    "cypress_config_file": "./cypress.config.js",
-    "specs": "cypress/e2e/**/*.cy.js",
-    "build_name": "LT-Cypress",
-    "parallels": 1,
-    "npm_dependencies": {
+      "cypress_config_file": "./cypress.config.js",
+      "specs": "cypress/e2e/**/*.cy.js",
+      "build_name": "LT-Cypress",
+      "parallels": 1,
+      "npm_dependencies": {
       "cypress": "15.0.0",
       "@badeball/cypress-cucumber-preprocessor": "23.0.0",
       "@bahmutov/cypress-esbuild-preprocessor": "2.2.5",
