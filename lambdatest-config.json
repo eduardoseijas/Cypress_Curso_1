@@ -21,8 +21,8 @@
    ],
 
   "run_settings": {
-      "specs": "cypress/e2e/**/*.cy.js",
-      "build_name": "LT-Cypress",
+      "specs": "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/*",
+      "build_name": "Lambdatatest_1",
       "parallels": 1,
       "npm_dependencies": {
       "cypress": "15.0.0",
