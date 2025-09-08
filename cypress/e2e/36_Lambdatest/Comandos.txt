@@ -28,7 +28,7 @@ En run_settings tambien agregamos el build_name y el specs
   "run_settings": {
       "specs": "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/*",
       "build_name": "Lambdatatest_1",
-      "parallels": 1,
+      "parallels": 1, // si el paralles, le agrego 2 o 3 es el numero de veces que lo corre
       "npm_dependencies": {
       "cypress": "15.0.0",
       "@badeball/cypress-cucumber-preprocessor": "23.0.0",
