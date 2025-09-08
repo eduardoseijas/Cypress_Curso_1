@@ -11,3 +11,4 @@ si quiero encenderlo le doy
 jenkins start
 si quiero apargarlo
 jenkins stop
+

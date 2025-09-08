@@ -1,0 +1,54 @@
+Cuando configuramos esto, si lo hacemos con nuestro github
+
+en configuracion en gitbucket colocamos en github la ruta de nuestro proyecto
+https://github.com/eduardoseijas/Cypress_Curso_1.git/
+
+luego en Source Code Management
+seleccionamos git
+
+colcamos la ruta tambien https://github.com/eduardoseijas/Cypress_Curso_1.git/
+
+si nuestra branch es master, colocarlo ahi
+
+*/master
+
+y este es el comando para lanzar alguno en especifico:
+--------------------------------------------------------------
+@echo off
+cd /d "%WORKSPACE%" || (echo [ERROR] No workspace & exit /b 1)
+
+REM Verifica que se clonó algo
+echo [INFO] Archivos en el workspace:
+dir /b
+
+REM Si tu proyecto NO está en una subcarpeta, deja esto así.
+REM Si estuviera en una subcarpeta, haz: cd NombreSubcarpeta
+
+if not exist package.json (
+  echo [ERROR] Falta package.json. Revisa repo/rama o subcarpeta.
+  exit /b 2
+)
+
+REM Evitar conflictos de peer deps
+set "npm_config_legacy_peer_deps=true"
+set "npm_config_audit=false"
+set "npm_config_fund=false"
+
+REM Instalar dependencias
+if exist package-lock.json (
+  call npm ci || (echo [WARN] npm ci fallo; probando npm i & call npm i)
+) else (
+  call npm i
+)
+
+REM Instalar/verificar Cypress y ejecutar UN spec de ejemplo
+call npx cypress install
+call npx cypress verify
+
+call npx cypress run ^
+  --spec "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js" ^
+  --browser chrome --headless
+
+  ------------------------------------------------------------------------------
+
+  
