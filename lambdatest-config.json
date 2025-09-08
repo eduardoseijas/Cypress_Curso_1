@@ -1,20 +1,40 @@
 {
-  "lambdatest_auth": {
-    "username": "eduardoseijas18",
-    "access_key": "LT_t1tkJIr8b7ADgQgbomM1uhUlMR3UJ69SdaIN78k734GXk1D"
-  },
-  "browsers": [
-    { "browser": "Chrome", "platform": "Windows 11", "versions": ["latest"] }
-  ],
-  "run_settings": {
-    "build_name": "LT-Cypress",
-    "parallels": 1,
-    "specs": [
-      "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js"
-    ],
-    "video": true,
-    "headless": true,
-    "use_local_dependencies": true,
-    "npm_dependencies": {}
-  }
+   "lambdatest_auth": {
+      "username": "eduardoseijas18",
+      "access_key": "LT_t1tkJIr8b7ADgQgbomM1uhUlMR3UJ69SdaIN78k734GXk1D"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      }
+   ],
+   "run_settings": {
+      "cypress_config_file": "cypress.json",
+      "reporter_config_file": "base_reporter_config.json",
+      "build_name": "build-name",
+      "parallels": 1,
+      "specs": "cypress/e2e/**/*.cy.js",
+      "ignore_files": "",
+      "network": false,
+      "video": true,
+      "headless": false,
+      "npm_dependencies": {
+         "cypress": "9.6"
+      }
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnel_name": null
+   }
 }
