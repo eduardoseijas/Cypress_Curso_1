@@ -11,7 +11,6 @@
     "build_name": "LT-Cypress",
     "parallels": 1,
     "specs": "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js",
-    "ignore_files": [],
     "network": false,
     "video": true,
     "headless": true,
