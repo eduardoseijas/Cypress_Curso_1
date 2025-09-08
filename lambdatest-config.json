@@ -21,7 +21,6 @@
    ],
 
   "run_settings": {
-      "cypress_config_file": "./cypress.config.js",
       "specs": "cypress/e2e/**/*.cy.js",
       "build_name": "LT-Cypress",
       "parallels": 1,
