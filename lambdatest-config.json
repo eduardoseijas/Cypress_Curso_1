@@ -24,7 +24,7 @@
       "reporter_config_file": "base_reporter_config.json",
       "build_name": "Integracion_Lambdatest_2",
       "parallels": 1,
-      "specs": "D:/Practica_Cypress_1/cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/*",
+      "specs": "cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/*",
       "ignore_files": "",
       "network": false,
       "video": true,

@@ -41,4 +41,8 @@ En run_settings tambien agregamos el build_name y el specs
   }
       "specs": "D:/Practica_Cypress_1/cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/*",
       OJO, este de arriba es el que meti en mi run_settings para que corra una sola carpeta
+
   installar npm install para asegurarme que corre 
+
+  Y para poder correrlo, ya todo seria
+  lambdatest-cypress run
