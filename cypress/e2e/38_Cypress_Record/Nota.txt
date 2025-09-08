@@ -1,0 +1,6 @@
+Debemos colocar en la cypress.config.js
+
+experimentalStudio: true,
+guardarlo
+
+luego corremos npx cypress open

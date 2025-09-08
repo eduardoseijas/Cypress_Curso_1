@@ -6,6 +6,7 @@ const createEsbuildPlugin = require('@badeball/cypress-cucumber-preprocessor/esb
 module.exports = defineConfig({
   projectId: '5z77ch',
   e2e: {
+    //experimentalStudio: true,
     supportFile: 'cypress/support/e2e.js',
     //specPattern: 'cypress/e2e/**/*.feature',
 
@@ -30,5 +31,6 @@ module.exports = defineConfig({
     video: true,
     screenshotsFolder: 'cypress/screenshots',
     videosFolder: 'cypress/videos',
+
   },
 });
