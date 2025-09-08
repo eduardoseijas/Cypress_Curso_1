@@ -1,0 +1,43 @@
+Node Agent Virtual
+
+Lo primero es, estan ya una vez dentro de jenkins vas a 
+Manaje jenkins y ahi seleccionas la opcion Nodes
+
+En nodes, creas un nuevo node, colocas el nombre que quieras
+puede ser Agent_1 o Agent_2 o Agent_3, el que quieras
+
+seleccionas luego la opcion que dice Permanent Agent y le das a crear 
+
+Luego la configuracion de este Agent_1 es la siguiente:
+
+Name: Agent_1
+Descripcion: lo que quieras colocar 
+Number of executors: la cantidad de maquinas que quieras, en este ejemplo coloque 2
+
+Remote root directory: aqui la ruta donde colocare el archivo que descargare agent
+en este caso lo coloque en el disco C por eso coloco -> C:\agent
+
+Labels: la cantidad de maquinas por nombre que en Number of executor coloque, es decir
+como yo coloque 2, voy a colocar Agent_1_1 Agent_1_2
+
+Usage: Use this node as much as possible
+
+Launch method: Launch agent by connecting it to the controller
+
+Avaliability: Keep this agent online as much as possible
+
+Y se salva.
+Luego si vas al status de esa maquina remota que creas, te da las opciones para descargar
+sea linux, mac, windows
+ 
+ en mi caso windows, http://localhost:8080/jnlpJars/agent.jar
+
+ descargo, guardo en mi disco c y descomprimo ahi 
+ (OJO ESTA, ES LA RUTA QUE ESCOJO PARA COLOCAR EN EL Remote root directory) 
+
+ Luego abro mi powershell y coloco para activar mi maquina virtual, lo que me indica, en el
+ status, con la opcion de windows 
+
+ java -jar agent.jar -url http://localhost:8080/ -secret 167cb07aad4793c77cd90e87c01ee32320d4642ab07bd7e3b815f0bbffb57a75 -name "Agent_1" -webSocket -workDir "C:\agent"
+
+ con control c , hago STOP 
