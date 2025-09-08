@@ -24,112 +24,23 @@ cacheDirectories:
   - cypressCache
 env:
   CYPRESS_CACHE_FOLDER: cypressCache
-  HYPEREXECUTE_CUSTOM_BUILD: LT-Cypress
+  HYPEREXECUTE_CUSTOM_BUILD: Lambdatatest_1
 matrix:
   browser:
     - Chrome-latest-1
     - Firefox-latest-1
   test:
-    - cypress/e2e/01_Seccion_1/Hola_Mundo.cy.js
-    - cypress/e2e/02_Introduccion_JavaScript/01_Variable_Tipo_String/01_Variable_Tipo_String.cy.js
-    - cypress/e2e/02_Introduccion_JavaScript/02_Variables_Tipo_Numericas/02_Variables_Tipo_Numericas.cy.js
-    - cypress/e2e/02_Introduccion_JavaScript/03_Variable_Tipo_TypeOf/03_Variable_Tipo_TypeOf.cy.js
-    - cypress/e2e/02_Introduccion_JavaScript/04_Variables_Object_Arrays/04_Variables_Object_Arrays.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/01_Validando_Titulo_De_La_Pag.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/02_Funcion_Type_Enter.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/03_Funcion_Type_PageUp.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/04_Funcion_Only.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/05_Funcion_Type_Tab.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/06_Asserts.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/07_Funcion_Click_Basico.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/08_Funcion_Click_Force_True.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/09_Funcion_Click_X_Y.cy.js
-    - cypress/e2e/03_Creando_Primeras_Pruebas_Cypres/10_Primer_Reto.cy.js
-    - cypress/e2e/04_Selectores_ID_XPATH_Contains/01_Selector_Por_ID.cy.js
-    - cypress/e2e/04_Selectores_ID_XPATH_Contains/02_Selectores_Por_Atributos.cy.js
-    - cypress/e2e/04_Selectores_ID_XPATH_Contains/03_Selectores _Por_Xpath.cy.js
-    - cypress/e2e/04_Selectores_ID_XPATH_Contains/04_Selectores_Por_Contains.cy.js
-    - cypress/e2e/04_Selectores_ID_XPATH_Contains/05_Segundo_Reto.cy.js
-    - cypress/e2e/05_Manejo_CheckBox/01_Manejo_CheckBox_1.cy.js
-    - cypress/e2e/05_Manejo_CheckBox/02_Manejo_CheckBox_y_RadioButton.cy.js
-    - cypress/e2e/06_Manejo_Multiples_Select/01_Manejo_Select_1.cy.js
-    - cypress/e2e/06_Manejo_Multiples_Select/02_Manejo_Multi_Select_2.cy.js
-    - cypress/e2e/06_Manejo_Multiples_Select/03_Manejo_Select_Then.cy.js
-    - cypress/e2e/06_Manejo_Multiples_Select/04_Reto_Multi_Select.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/01_Asserts_Contains.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/02_Asserts_find_eq.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/03_Asserts_Text_1.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/04_Asserts_Have_Contains.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/05_Asserts_Validate_Contains.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/06_Asserts_Class.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/07_Asserts_And.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/08_Asserts_Not_Have_Class.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/09_Asserts_Length_Css.cy.js
-    - cypress/e2e/07_Conociendo_Los_Asserts/10_Asserts_Contains_Por_Inicio.cy.js
-    - cypress/e2e/08_Retos_Asserts_Invoke/01_Reto_Asserts.cy.js
-    - cypress/e2e/08_Retos_Asserts_Invoke/02_Reto_Asserts_Funcion_Invoke.cy.js
-    - cypress/e2e/09_Referencias_de_Windows/01_Referencia_de_Windows.cy.js
-    - cypress/e2e/12_Upload_File/01_Upload_File.cy.js
-    - cypress/e2e/12_Upload_File/02_Upload_File_fixtures.cy.js
-    - cypress/e2e/13_Mouse/01_Mouse_Drag_And_Drop.cy.js
-    - cypress/e2e/13_Mouse/02_Mouse_Drag_And_Drop_Con_Xpath.cy.js
-    - cypress/e2e/13_Mouse/03_Mouse_Drag_And_Drop_Trigger_Muouseover.cy.js
-    - cypress/e2e/13_Mouse/04_Mouse_Drag_And_Drop_Invoke.cy.js
-    - cypress/e2e/13_Mouse/05_Mouse_Drag_And_Drop_Slider.cy.js
-    - cypress/e2e/14_Manejo_Calendario/01_Calendario_1.cy.js
-    - cypress/e2e/14_Manejo_Calendario/02_Calendario_Click.cy.js
-    - cypress/e2e/15_Funciones_Bucles_For_Each/01_Funciones_Bucles_For_and_Each.cy.js
-    - cypress/e2e/15_Funciones_Bucles_For_Each/02_Funciones_Bucles_For_and_Each.cy.js
-    - cypress/e2e/15_Funciones_Bucles_For_Each/03_Funciones_Bucles__Each.cy.js
-    - cypress/e2e/15_Funciones_Bucles_For_Each/04_Funciones_Bucles__Each._Click.cy.js
-    - cypress/e2e/15_Funciones_Bucles_For_Each/05_Reto_Funciones_Bucles__Each.cy.js
-    - cypress/e2e/15_Funciones_Bucles_For_Each/06_Reto_Funciones_Bucles__Each_Todos_Elementos.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/01_Manejo_Funciones_Tablas_Children.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/02_Manejo_Funciones_Tablas_EQ.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/03_Manejo_Funciones_Tablas_Filter.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/04_Manejo_Funciones_Tablas_Find.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/05_Manejo_Funciones_Tablas_First.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/06_Manejo_Funciones_Tablas_Last.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/07_Manejo_Funciones_Tablas_NextAll.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/08_Manejo_Funciones_Tablas_Elemento_Padre.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/09_Reto_Manejo_Funciones_Tablas
-      y Asserts.cy.js
-    - cypress/e2e/16_Manejo_y_Funciones_Para_Tablas/10_Reto_Manejo_Funciones_Tablas_ObtenerValores.cy.js
-    - cypress/e2e/17_Alerts/01_Alerts.cy.js
-    - cypress/e2e/18_Manejo_De_Los_Alias/01_Manejo_De_Los_Alias.cy.js
-    - cypress/e2e/19__Funcion_Invoke/01_Invoke.cy.js
-    - cypress/e2e/19__Funcion_Invoke/02_Invoke.cy.js
-    - cypress/e2e/19__Funcion_Invoke/03_Invoke_Estilo.cy.js
-    - cypress/e2e/19__Funcion_Invoke/04_Invoke_Se_Oculte_El_Elemento.cy.js
-    - cypress/e2e/19__Funcion_Invoke/05_Invoke_Se_Mostrando_El_Elemento.cy.js
-    - cypress/e2e/19__Funcion_Invoke/06_Reto_Invoke.cy.js
-    - cypress/e2e/19__Funcion_Invoke/07_Invoke_src.cy.js
-    - cypress/e2e/19__Funcion_Invoke/08_Invoke_target_black.cy.js
-    - cypress/e2e/20_Creacion_de_Snippets/01_Snippets.cy.js
-    - cypress/e2e/20_Creacion_de_Snippets/02_Snippets.cy.js
-    - cypress/e2e/21_Modos_de_Navegacion_Entre_Paginas/01_Navegacion_back_forward.cy.js
-    - cypress/e2e/21_Modos_de_Navegacion_Entre_Paginas/02_Navegacion_reload.cy.js
-    - cypress/e2e/22_Manejo_De_Los_Hooks/01_Hooks.cy.js
-    - cypress/e2e/22_Manejo_De_Los_Hooks/02_Hooks.cy.js
-    - cypress/e2e/22_Manejo_De_Los_Hooks/03_Reto_Hooks.cy.js
-    - cypress/e2e/23_Creacion_Funciones_Custom/01_Custom.cy.js
-    - cypress/e2e/23_Creacion_Funciones_Custom/02_Custom_Bloque_InputValidation.cy.js
-    - cypress/e2e/23_Creacion_Funciones_Custom/03_Reto_Comando_Custom.cy.js
-    - cypress/e2e/23_Creacion_Funciones_Custom/04_Reto_Comando_Custom._Validando_Error.cy.js
-    - cypress/e2e/24_Page_Object_Model/01_PageObjectModel.cy.js
-    - cypress/e2e/24_Page_Object_Model/02_PageObjectModel.cy.js
-    - cypress/e2e/24_Page_Object_Model/03_PageObjectModel_Validando_Error.cy.js
     - cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/01_fixture.cy.js
     - cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/02_fixture_Cargando_Por_Alias.cy.js
     - cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/03_Reto_fixture_Varios_Archivos.cy.js
-    - cypress/e2e/27_Fixture_desde_un_archivo_excel/04_Reto_fixture_Excel_Varios_Archivos.cy.js
+    - cypress/e2e/26_Fixture_Carga_De_Informacion_Por_Archivos_Json/Nota_fixture.txt
   os:
     - win
 testSuites:
   - npx cypress run --browser=$browser --headed --config video=false --spec $test
 cypressOps:
   DedicatedProxy: false
-  Build: LT-Cypress
+  Build: Lambdatatest_1
   BuildTags: []
   Tags: []
   Network: false
