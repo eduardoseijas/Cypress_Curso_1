@@ -19,15 +19,23 @@
          ]
       }
    ],
-"run_settings": {
-  "cypress_config_file": "./cypress.config.js",
-  "specs": "cypress/e2e/**/*.cy.js",
-  "build_name": "LT-Cypress",
-  "parallels": 1,
-  "npm_dependencies": {}
-},
-   "tunnel_settings": {
-      "tunnel": false,
-      "tunnel_name": null
-   }
+
+  "run_settings": {
+    "cypress_config_file": "./cypress.config.js",
+    "specs": "cypress/e2e/**/*.cy.js",
+    "build_name": "LT-Cypress",
+    "parallels": 1,
+    "npm_dependencies": {
+      "cypress": "15.0.0",
+      "@badeball/cypress-cucumber-preprocessor": "23.0.0",
+      "@bahmutov/cypress-esbuild-preprocessor": "2.2.5",
+      "esbuild": "0.25.9",
+      "cypress-xpath": "2.0.1",
+      "cypress-plugin-tab": "1.0.5",
+      "cypress-file-upload": "5.0.8",
+      "cypress-real-events": "1.14.0",
+      "@4tw/cypress-drag-drop": "2.3.0"
+    }
+  }
 }
+
