@@ -1,0 +1,20 @@
+En esta pag web https://github.com/qauni/json-server
+
+clonamos el repositorio
+
+git clone https://github.com/qauni/json-server.git
+
+luego en mi carpeta :\Practica_Cypress_1\cypress\e2e\39_Api_Json>
+
+Instalamos las dependencias
+npm install
+y luego instalamos el del github
+npm install -g json-server
+Installar esto tambien:
+npm i -D json-server
+
+
+para correrlo ingresamos a la carpeta json-server
+cd json-server y aplicamos el comando:
+
+npm run start
