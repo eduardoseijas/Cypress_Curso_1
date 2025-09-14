@@ -13,8 +13,7 @@ describe('Api Json Test', ()=>{
 
         .should((response)=>{
             expect(response.status).to.eq(200)
-        })
-        
+        })     
      })
 
 });
